@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Guest house in Britanny</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="all"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+  <!-- barre de navigation -->
+  <div>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo"><i class="material-icons">home</i></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="maison_fr.html" class="actuel">House</a></li>
+          <li><a href="region_fr.html">Region</a></li>
+          <li><a href="formulaire_fr.html">Form</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a class="waves-effect" href="maison_fr.html" style="color:#558b2f">House</a></li>
+          <li><a class="waves-effect" href="region_fr.html">Region</a></li>
+          <li><a class="waves-effect" href="formulaire_fr.html">Form</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/vague.jpg" alt="vague sur l'ocean"></div>
+  </div>
+
+  <!-- fiche de la maison -->
+  <h4 class="pres">Welcome ! Let me show you the best guest-house in Britanny (modestly) <i class="material-icons">tag_faces</i> :</h4>
+  <br>
+
+  <img class="responsive-img" src="images/chateau00.jpg" id="maison" alt="image du chateau de Suscinio" />
+  <h5 style="text-align:left" class="descrip">     Ker Bidule is a nice traditional house made of granit stone and slate, surrounded by nice landscapes (but be careful to "korrigans").<br>
+    This region is perfect if you like walking, cycling, using computers and fishing.<br>
+    In this guest-house you can find TV, DVD player (and DVDs), CDs, books et games. Everybody would be satisfied !<br>
+    A pretty roof (with barbeque) is avaible, such as torture chamber (always useful). You can rent some bikes,
+     using tiny roads in countryside and visiting places around Brent ("Nantes à Brest" canal).<br>
+    From this house, you can visit Vannes' town, whit dark ages' style houses and french garden, near the famous port. We can find boats, for everyone,
+    and if you want to rent one, please clic here : <a href="https://en.wikipedia.org/wiki/RMS_Titanic" target="_blank"><i class="material-icons">directions_boat</i></a>.<br>
+    Ducs' pond, a nice inner place of water, is also avaible for fishing, running (around) or just walking.<br>
+    Famous beaches of south's Britanny, such as Conleau or Quiberon, and Carnac's standing stones are less than 1 hour by car from this place ...</h5><br>
+  <h5 class="pres">Don't be shy, and look at this house a little closer :</h5><br>
+
+  <!-- galerie d'images -->
+  <div class="galerie">
+    <a href="images/chateau01.jpg" target="_blank"><img class="responsive-img" data-caption="Point of view" width="250" src="images/chateau01.jpg" alt="Point of view"/></a>
+    <a href="images/chateau02.jpg" target="_blank"><img class="responsive-img" data-caption="Bird view" width="250" src="images/chateau02.jpg" alt="Bird view"/></a>
+    <a href="images/chateau03.jpg" target="_blank"><img class="responsive-img" data-caption="Front door" width="250" src="images/chateau03.jpg" alt="Front door"/></a>
+    <a href="images/chateau04.jpg" target="_blank"><img class="responsive-img" data-caption="See from the roof" width="250" src="images/chateau04.jpg" alt="See from the roof"/></a>
+  </div>
+  <div class="galerie">
+    <a href="images/chateau05.jpg" target="_blank"><img class="responsive-img" data-caption="After rainfall" width="250" src="images/chateau05.jpg" alt="After rainfall"/></a>
+    <a href="images/chateau06.jpg" target="_blank"><img class="responsive-img" data-caption="Bedroom's window" width="250" src="images/chateau06.jpg" alt="Bedroom's window"/></a>
+    <a href="images/chateau07.jpg" target="_blank"><img class="responsive-img" data-caption="Main room's fireplace" width="250" src="images/chateau07.jpg" alt="Main room's fireplace"/></a>
+    <a href="images/chateau08.jpg" target="_blank"><img class="responsive-img" data-caption="Another house (smaller) in the garden" width="250" src="images/chateau08.jpg" alt="Another house (smaller) in the garden"/></a>
+  </div>
+  <br>
+
+  <h5 class="pres">Now, if you want to reserve this house, please clic on Form (top menu) or clic here : <a href="formulaire_fr.html"><i  class="material-icons">library_books</i></a></h5>
+  <br>
+
+  <!--Import jQuery before materialize.js-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+
+  <!-- parallax -->
+  <script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+    });
+  </script>
+
+  <!-- side bar mobile -->
+  <script>
+    $( document ).ready(function(){})
+    $(".button-collapse").sideNav();
+  </script>
+
+<!-- materialboxed -->
+  <script>
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
+    });
+  </script>
+
+  </body>
+
+</html>

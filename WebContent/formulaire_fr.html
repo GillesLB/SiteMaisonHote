@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>Formulaire à remplir</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <link rel="stylesheet" href="style.css" />
+      <!-- Import Calendar -->
+      <link rel="stylesheet" href="calendrier.css">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="all"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+  <!-- barre de navigation -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><i class="material-icons">home</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="maison_fr.html">Maison</a></li>
+        <li><a href="region_fr.html">Région</a></li>
+        <li><a href="formulaire_fr.html" class="actuel">Formulaire</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="waves-effect" href="maison_fr.html">Maison</a></li>
+        <li><a class="waves-effect" href="region_fr.html">Région</a></li>
+        <li><a class="waves-effect" href="formulaire_fr.html" style="color:#558b2f">Formulaire</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="parallax-container">
+  	<div class="parallax"><img src="images/vague.jpg" alt="vague sur l'ocean">
+ 	  </div>
+  </div>
+
+  <!-- formulaire d'identité -->
+  <h4 class="pres">Afin de pouvoir réserver la maison, merci de bien vouloir remplir ce formulaire</h4>
+  <br>
+
+  <p class="coord">Quelles sont vos coordonnées ?</p>
+    <form name="saisie" class="col s12" method="post" action="reservationServlet">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">person_pin</i>
+          <input id="nom" name="nom" placeholder="Nom" type="text" class="validate" required="required">
+          <label for="nom" data-error="Erreur" data-success="Correct">Nom *</label>
+          <label>Nom</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">person_pin</i>
+          <input id="prenom" name="prenom" placeholder="Prénom" type="text" class="validate" required="required">
+          <label for="prenom" data-error="Erreur" data-success="Correct">Prénom *</label>
+          <label>Prénom</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input id="email" name="email" placeholder="E-mail" type="email" class="validate" required="required">
+          <label for="email" data-error="Erreur" data-success="Correct">E-mail *</label>
+          <label>E-mail</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">smartphone</i>
+          <input id="nTelephone" name="nTelephone" placeholder="Numéro de téléphone" type="text" class="validate" required="required">
+          <label for="nTelephone" data-error="Erreur" data-success="Correct">Numéro de téléphone *</label>
+          <label>Numéro de téléphone</label>
+        </div>
+      </div>
+
+    <!-- dates demandées -->
+    <div class="row">
+  		<div class="input-field col s6">
+     		 <p>Date d'arrivée *</p>
+     		 <i class="material-icons prefix">perm_contact_calendar</i>
+      		<input id='arrivee' name="arrivee" type="text" class="datepicker" required="required">
+     	</div>
+     	<div class="input-field col s6">
+        	<p>Nombre de nuits *</p>
+        	<i class="material-icons prefix">star</i>
+        	<input id="nuits" name="nuits" placeholder="Nuits" type="text" class="validate" required="required">
+       		<label for="nuits" data-error="Erreur" data-success="Correct">Nombre de nuits</label>
+        	<label>Nombre de nuits</label>
+    	</div>
+	</div>
+
+<!-- checkbox -->
+<!-- checkbox radio loisir / pro -->
+<div class="row">
+<div class="col s6">
+
+<p>Quelle est la nature de votre séjour * ?</p>
+
+      <p>
+        <input class="with-gap" name="groupeRadio" type="radio" id="loisir" checked="checked" value="loisir"/>
+        <label for="loisir">Loisir</label>
+      </p>
+      <p>
+        <input class="with-gap" name="groupeRadio" type="radio" id="professionnel" value="professionnel"/>
+        <label for="professionnel">Professionnel</label>
+      </p>
+     <br>
+
+</div>
+<!-- checkbox case options -->
+<div class="col s6">
+
+<p>Souhaitez-vous des options ?</p>
+
+    <div class="col s4">
+   	<p>
+      <input type="checkbox" name="parking" class="filled-in" id="parking" value="parking" />
+      <label for="parking">Parking</label>
+    </p>
+    <p>
+      <input type="checkbox" name="animal" class="filled-in" id="animal" value="animal"/>
+      <label for="animal">Animal</label>
+    </p>
+
+      <p>
+        <input type="checkbox" name="parapluie" class="filled-in" id="parapluie" value="parapluie"/>
+        <label for="parapluie">Parapluie</label>
+      </p>
+      <p>
+        <input type="checkbox" name="fumeur" class="filled-in" id="fumeur" value="fumeur"/>
+        <label for="fumeur">Fumeur</label>
+      </p>
+    </div>
+
+
+    </div>
+  </div>
+  <br>
+
+  <!-- 2 combo box -->
+  <div class="row">
+  <div class="input-field col s6">
+    <p class="coord">Choisissez le nombre de personne * :</p>
+
+    <select name="nbPersonne">
+      <option value="" disabled selected>Nombre de personne</option>
+      <option value="1">une personne (prix de base)</option>
+      <option value="2">deux personnes (base + 50 €)</option>
+      <option value="3">trois personnes (base + 80 €)</option>
+      <option value="4">quatre personnes (maximum !) (base + 100 €)</option>
+	  </select>
+    <label>Nombre de personne</label>
+  </div>
+
+	<div class="input-field col s6">
+    <p class="coord">Indiquez votre région d'origine :</p>
+
+    <!-- Dropdown Structure -->
+    <select name="region">
+      <option value="" disabled selected>Région d'origine</option>
+      <option value="Auvergne-Rhone-Alpes">Auvergne-Rhône-Alpes</option>
+      <option value="Bourgogne-Franche-Comte">Bourgogne-Franche-Comté</option>
+      <option value="Bretagne">Bretagne</option>
+      <option value="Centre-Val de Loire">Centre-Val de Loire</option>
+      <option value="Corse">Corse</option>
+      <option value="Grand Est">Grand Est</option>
+      <option value="Hauts-de-France">Hauts-de-France</option>
+      <option value="Ile-de-France">Île-de-France</option>
+      <option value="Normandie">Normandie</option>
+      <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+      <option value="Occitanie">Occitanie</option>
+      <option value="Pays de la Loire">Pays de la Loire</option>
+      <option value="Provence-Alpes-Cote d'Azur">Provence-Alpes-Côte d'Azur</option>
+      <option value="DOM / TOM">DOM / TOM</option>
+      <option value="Etranger">Etranger</option>
+      </select>
+    <label>Région</label>
+  </div>
+  <br>
+
+  <!-- bouton d'envoi -->
+  <div class="boutonConf">
+    <p class="boutonConf">Confirmer la commande :</p>
+    <button class="btn waves-effect waves-light btn-large" type="submit" name="saisie">Estimation
+    <i class="material-icons right">send</i>
+    </button>
+  </div>
+</div>
+<br>
+<!-- fermeture du formulaire -->
+</form>
+
+<!-- javascript -->
+    <script>
+    $('.dropdown-button').dropdown({
+          inDuration: 300,
+          outDuration: 225,
+          constrainWidth: false, // Does not change width of dropdown to that of the activator
+          hover: true, // Activate on hover
+          gutter: 0, // Spacing from edge
+          belowOrigin: false, // Displays dropdown below the button
+          alignment: 'left', // Displays dropdown with edge aligned to the left of button
+          stopPropagation: false // Stops event propagation
+          
+        }
+      );
+      </script>
+
+      <script>
+        $(document).ready(function() {
+        	$('select').material_select();
+        });
+      </script>
+
+      <!--Import jQuery before materialize.js-->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/materialize.min.js"></script>
+
+      <!-- side bar mobile -->
+      <script>
+        $( document ).ready(function(){})
+        $(".button-collapse").sideNav();
+      </script>
+
+      <!-- parallax -->
+      <script>
+        $(document).ready(function(){
+        $('.parallax').parallax();
+        });
+      </script>
+
+      <!-- calendrier du formulaire -->
+      <script>
+        $(document).ready(function () {
+        $('select').material_select();
+        });
+
+        $('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15, // Creates a dropdown of 15 years to control year,
+          today: 'Aujourdhui',
+          clear: 'Annuler',
+          close: 'Ok',
+          closeOnSelect: false // Close upon selecting a date,
+        });
+      </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,285 @@
+
+/* site smartphone */
+@media screen and (max-width: 485px)
+{
+b
+{
+	color: #1b5e20;
+}
+
+body
+{
+	background-color: #f1f8e9;
+}
+
+#bann
+{
+  width: 700px;
+  width: 100%;
+}
+
+#stitre
+{
+	color: #1b5e20;
+	text-align: center;
+	font-size: 14px;
+}
+
+.carousel .carousel-item
+{
+  width:200px;
+}
+
+.collection-item
+{
+  max-width: 50%;
+  height: auto;
+}
+
+.descrip
+{
+  font-size: 10px;
+}
+
+.galerie
+{
+  display: none;
+}
+
+.langue
+{
+  display: none;
+}
+
+.materialboxed
+{
+  max-width: 90%;
+}
+
+.pres
+{
+  text-align: center;
+  font-weight: bold;
+  color: #1b5e20;
+	font-size: 20px !important;
+}
+
+.video
+{
+  display:none;
+  max-width: 50%;
+}
+}
+
+/* site tablette */
+@media screen and (max-width: 976px)
+{
+.galery
+{
+  display: none;
+}
+}
+
+/* site ordinateur */
+b
+{
+  color: #1b5e20;
+}
+
+body
+{
+	background-color: #f1f8e9;
+}
+
+table
+{
+	margin: auto;
+}
+
+th
+{
+	color: white;
+	background-color: #008080;
+}
+
+#centre
+{
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+#drapeau-en
+{
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+#drapeau-en:hover
+{
+  background-image:url(images/accueil-drapeau-english-pc02.jpg);
+}
+
+#drapeau-fr
+{
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+#drapeau-fr:hover
+{
+  background-image:url(images/accueil-drapeau-france-pc02.jpg);
+}
+
+#fond-index
+{
+	 background-image: url(images/vague.jpg);
+   position: fixed;
+   top: 0;
+   left: 0;
+   /* Préserve le ratio de l'image */
+   min-width: 100%;
+   min-height: 100%;
+   max-width: 100%;
+}
+
+#gal
+{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#maison
+{
+  margin-right: 10px;
+  float: left;
+}
+
+#stitre
+{
+	color: #1b5e20;
+	text-align: center;
+	font-size: 24px;
+}
+
+#tit
+{
+  text-align: center;
+  color: black;
+}
+
+#video
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.actuel
+{
+  background: #388e3c;
+}
+
+.boutonConf
+{
+	text-align: center;
+}
+
+.carousel .carousel-item
+{
+  width:400px;
+}
+
+.classe
+{
+  color: #1b5e20;
+	font-size: 36px;
+}
+
+.collection
+{
+  margin: auto;
+  width:50%;
+  text-align: center;
+}
+
+.coord
+{
+  color: black;
+}
+
+.descrip
+{
+	color: #1b5e20;
+}
+
+.embed-container
+{
+	 position: relative;
+	 padding-bottom: 56.25%;
+	 height: 0;
+	 overflow: hidden;
+	 max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.galerie
+{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 100px;
+    grid-gap: 20px;
+}
+
+.langue
+{
+  color: black;
+}
+
+.menu
+{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav-wrapper
+{
+  background-color: #1b5e20;
+  color: white;
+}
+
+.pres
+{
+  text-align: center;
+  font-weight: bold;
+  color: #1b5e20;
+	font-size: 36px;
+}
+
+.right
+{
+  align-items: flex-end;
+}

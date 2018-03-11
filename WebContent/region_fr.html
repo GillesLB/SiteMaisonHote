@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <title>La Bretagne sud</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="all"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+<!-- barre de navigation -->
+<div>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><i class="material-icons">home</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="maison_fr.html">Maison</a></li>
+        <li><a href="region_fr.html" class="actuel">Région</a></li>
+        <li><a href="formulaire_fr.html">Formulaire</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="waves-effect" href="maison_fr.html">Maison</a></li>
+        <li><a class="waves-effect" href="region_fr.html" style="color:#558b2f">Région</a></li>
+        <li><a class="waves-effect" href="formulaire_fr.html">Formulaire</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="images/vague.jpg" alt="vague sur l'ocean">
+  </div>
+</div>
+
+<!-- présentation de la région -->
+<p class="pres">Voici une (rapide) présentation de la Bretagne :</p><br>
+<div class="galerie">
+  <img class="responsive-img pres" src="images/carte-bretagne.jpg" alt="carte de la Bretagne"/>
+  <img class="responsive-img pres" src="images/fleche.jpg" alt="fleche vers la gauche"/>
+  <img class="responsive-img pres" src="images/carte-France-Bretagne.jpg" alt="place de la Bretagne en France"/>
+</div>
+
+<blockquote cite="https://fr.wikipedia.org/wiki/Histoire_de_la_Bretagne">
+<p class="descr">L'histoire de la Bretagne commence avec un peuplement dont les traces remontent à la préhistoire, dès 700 000 ans av. J.-C. La période néolithique, qui commence dans ces régions vers 5000 av. J.-C., y est marqué par le développement d'un mégalithisme important se manifestant dans des sites comme le cairn de Barnenez, le cairn de Gavrinis, la table des Marchand de Locmariaquer ou les alignements de Carnac. Au cours de sa protohistoire qui commence vers le milieu du IIIe millénaire av. J.-C., le sous-sol riche en étain permet l'essor d'une industrie produisant des objets de bronze, ainsi que de circuits commerciaux d'exportation vers d'autres régions d'Europe. Durant les siècles qui précèdent notre ère elle est habitée par des peuples gaulois comme les Vénètes ou les Namnètes avant que ces territoires ne soient conquis par Jules César en 57 av. J.-C., puis progressivement romanisés.<br><br>
+
+Faisant partie de l'Armorique lors de la période gallo-romaine, elle voit se développer un commerce maritime important autour des ports de Nantes, Vannes et Alet, ainsi que des usines de salaison le long de ses côtes. Lorsque le pouvoir romain connait des crises aux IIIe et Ve siècles, les premiers Bretons insulaires sont appelés par le pouvoir impérial pour aider à sécuriser son territoire, commençant ainsi un mouvement migratoire qui se poursuit jusqu'au VIe siècle, et donnant naissance à plusieurs royaumes dans la péninsule. C'est pour prévenir des incursions bretonnes que le royaume franc voisin met en place une marche de Bretagne incorporant le comté de Rennes et celui de Nantes. Les Mérovingiens puis les Carolingiens tentent du VIe siècle au VIIIe siècle d'intégrer cette région au royaume franc, avec des succès limités et éphémères.<br><br>
+
+L'unité de la région sous la forme du royaume de Bretagne se fait en 851 avec le roi Erispoë, fils de Nominoë, mais ne perdure pas à cause des querelles de succession et des incursions normandes. Dès 939, un duché de Bretagne prend sa suite dans des frontières quasi définitives, administré par des ducs issus de maisons bretonnes de 939 à 1166, avant qu'il ne tombe dans la sphère d'influence des Plantagenêts puis des Capétiens. La guerre de Succession de Bretagne voit s'affronter de 1341 à 1364, sur fond de Guerre de Cent Ans, différentes factions qui luttent pour s'approprier le duché. Un pouvoir autonome émerge ensuite lors des XIVe et XVe siècles, qui mène une politique d'indépendance vis-à-vis du royaume de France, mais qui aboutit finalement à l'union de la Bretagne à la France en 1532.<br><br>
+
+La province bretonne intégrée au royaume français conserve une relative autonomie, bénéficiant d'institutions propres. Après une période de forte croissance économique et démographique aux XVIe et XVIIe siècles grâce à la paix retrouvée, la Bretagne connaît des temps plus troublés de la fin du XVIIe siècle à la Révolution française en 1789. La province est dissoute en 1790 et son territoire réparti entre les cinq départements des Côtes-du-Nord, du Finistère, d'Ille-et-Vilaine, de la Loire-inférieure et du Morbihan.<br><br>
+
+Durant le « Long XIXe siècle » (1789-1914), marqué par une modernisation de son agriculture et par une explosion démographique, une émigration dans le reste de la France se développe. Terre alors réputée conservatrice, elle voit néanmoins se développer des mouvements ouvriers importants dans des villes comme Brest, Lorient ou Saint-Nazaire. La Première Guerre mondiale constitue un tournant important pour les Bretons, qui découvrent alors d'autres modes de vie que certains vont chercher peu à peu à intégrer. La question de la place de la langue bretonne et des traditions de la région devient l'élément central d'un mouvement politique breton qui commence à émerger à la même époque. Un long processus de modernisation court des années 1920 aux années 1970, de concert avec un mouvement de réaffirmation culturelle.</p>
+</blockquote><br>
+
+<div id="gal">
+  <img class="pres" src="images/triskel.jpeg" alt="représentation du triskel"/>
+  <img class="pres" src="images/vide.jpeg" alt="séparateur"/>
+  <img class="pres" src="images/drapeau-breton.jpg" alt="représentation du drapeau breton"/>
+  <img class="pres" src="images/vide.jpeg" alt="séparateur"/>
+  <img class="pres" src="images/triskel.jpeg" alt="représentation du triskel"/>
+</div>
+<br>
+
+<p class="pres">La particularité de cette région est une très grande diversités de paysages, non seulement entre les côtes du nord, du sud et de l'ouest, mais aussi avec le centre, partie beaucoup plus sauvage et boisé.</p>
+<p class="pres">Pour avoir une petite idée des paysages (majoritairement du sud), regardez ci-dessous.</p>
+<br>
+
+<!-- carousel -->
+<h5 class="pres">Cliquez sur l'image selectionnée pour l'agrandir :</h5>
+  <div class="carousel">
+    <a class="carousel-item" href="images/region01.jpg" target=_blank><img src="images/region01.jpg" alt="vieilles maisons du centre de Vannes"></a>
+    <a class="carousel-item" href="images/region02.jpg" target=_blank><img src="images/region02.jpg" alt="alignemens de menhir de Carnac"></a>
+    <a class="carousel-item" href="images/region03.jpg" target=_blank><img src="images/region03.jpg" alt="menhir de Carnac"></a>
+    <a class="carousel-item" href="images/region04.jpg" target=_blank><img src="images/region04.jpg" alt="côte sauvage de Quiberon"></a>
+    <a class="carousel-item" href="images/region05.jpg" target=_blank><img src="images/region05.jpg" alt="plage de Quiberon"></a>
+    <a class="carousel-item" href="images/region06.jpg" target=_blank><img src="images/region06.jpg" alt="ile de Houat"></a>
+    <a class="carousel-item" href="images/region07.jpg" target=_blank><img src="images/region07.jpg" alt="presqu'ile de Conleau"></a>
+    <a class="carousel-item" href="images/region08.jpg" target=_blank><img src="images/region08.jpg" alt="mairie de Vannes"></a>
+    <a class="carousel-item" href="images/region09.jpg" target=_blank><img src="images/region09.jpg" alt="jardin des remparts de Vannes"></a>
+    <a class="carousel-item" href="images/region10.jpg" target=_blank><img src="images/region10.jpg" alt="Belle ile en mer"></a>
+    <a class="carousel-item" href="images/region11.jpg" target=_blank><img src="images/region11.jpg" alt="golfe du Morbihan"></a>
+  </div>
+
+<!-- vidéos -->
+<h5 class="pres">Et voici une vidéo, pour vous donner quelques idées d'activités :</h5><br>
+
+<div class="video-container">
+  <embed src="https://www.youtube.com/embed/h4NyUzJ2eWI" width="425" height="344">
+</div>
+
+<br>
+<h5 class="pres">Si tout cela vous a donné envie de venir séjourner ici, cliquez sur Maison (à droite, dans la barre du haut) ou cliquez ici: <a href="maison_fr.html"><i class="material-icons">zoom_in</i></a></h5>
+<br>
+
+  <!--Import jQuery before materialize.js-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+
+   <!-- JS carousel -->
+  <script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+  </script>
+
+  <!-- side bar mobile -->
+  <script>
+    $( document ).ready(function(){})
+    $(".button-collapse").sideNav();
+  </script>
+
+  <!-- parallax -->
+  <script>
+    $(document).ready(function(){
+        $('.parallax').parallax();
+      });
+  </script>
+
+    </body>
+</html>
